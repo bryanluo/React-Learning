@@ -1,3 +1,10 @@
+/**
+ * 
+ *   class 创建的组件 - 有状态服务
+ *   1. 相当于 Vue 中的 data(){return {} } - state作用： 给组件绑定私有的数据
+ *   2. state 上的数据是可读可写的
+ * 
+ */
 import React,{Component} from "react";
 import ReactDOM from "react-dom";
 
@@ -16,8 +23,6 @@ class SayHello extends Component {
         // 由于继承了 Component 父类，所以构造器中必须调用 super()
         super()
         // 只有调用了 super() 以后， 才能使用 this 关键字
-        // 相当于 Vue 中的 data(){return {} } - state作用： 给组件绑定私有的数据
-        // state 上的数据是可读可写的
         this.state = {
             msg: "大家好， 我是 React"
         } 

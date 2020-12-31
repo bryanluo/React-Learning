@@ -2,6 +2,8 @@
  * 
  *   class 组件内部传递参数
  *   
+ *   无论是 class 还是 function 创建的组件， 他们的 props 都是只读的
+ * 
  */
 import React,{Component} from "react";
 import ReactDOM from "react-dom";
