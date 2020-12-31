@@ -30,3 +30,20 @@ module.exports = {
     }
 }
 ```
+
+
+### css 样式表只会在该组件下面生效吗
+
+全局生效
+
+1. 如何配置为只是当前组件生效？
+
+为 css 样式表启用模块化, webpack.config.js
+```
+ module: { // 所有第三方 模块的配置规则
+        rules: [ // 第三方匹配规则
+            { test: /\.js|jsx$/, use: "babel-loader", exclude: /node_modules/ },
+            { test: /\.css$/, use: ["style-loader", "css-loader?modules"]}, // 打包处理 CSS 样式表的第三方 loader, css-loader?modules 追加 modules 参数， 表示为 普通的 css 样式表，启用模块化
+        ]
+    },
+```

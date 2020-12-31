@@ -8,7 +8,8 @@ import React from 'react'
 import {CmtItem} from "@/components/CmtItem";
 
 // 导入组件需要的样式表
-import "@/css/CmtList.css";
+import style from "@/css/CmtList.css";
+console.log(style)
 
 export default class CmtList extends React.Component{
     constructor(){
@@ -26,7 +27,7 @@ export default class CmtList extends React.Component{
 
     render(){
         return <div>
-            <h1 className="title">这是评论列表组件</h1>
+            <h1 className={style.title}>这是评论列表组件</h1>
             {this.state.list.map(item => <CmtItem key={item.id} {...item}></CmtItem>)}
         </div>
     }

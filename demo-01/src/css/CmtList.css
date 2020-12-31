@@ -5,3 +5,9 @@
   font-weight: 200;
   text-align: center;
 }
+
+/* CSS 模块化，只针对 类选择器 和 ID选择器 生效 */
+/*  CSS 模块化不会将标签选择器模块化 */
+/* h1{
+color: green
+} */
