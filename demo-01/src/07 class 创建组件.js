@@ -1,3 +1,8 @@
+/**
+ * 
+ * 基于 class 关键字创建组件
+ * 
+ */
 import React,{Component} from "react";
 import ReactDOM from "react-dom";
 
