@@ -1,16 +1,13 @@
 /**
  * 
  * 
- *  将 CmtList 抽离出来
+ *  使用行内样式
  * 
  */
 import React from 'react'
-import {CmtItem} from "@/components/CmtItem";
+import {CmtItem2} from "@/components/CmtItem2";
 
-// 导入组件需要的样式表
-import "@/css/CmtList.css";
-
-export default class CmtList extends React.Component{
+export default class CmtList2 extends React.Component{
     constructor(){
         super()
         this.state = { 
@@ -26,8 +23,8 @@ export default class CmtList extends React.Component{
 
     render(){
         return <div>
-            <h1 className="title">这是评论列表组件</h1>
-            {this.state.list.map(item => <CmtItem key={item.id} {...item}></CmtItem>)}
+            <h1 style={{ color: 'red', fontSize: '35px', zIndex: 3, fontWeight: 200, textAlign: 'center' }}>这是评论列表组件</h1>
+            {this.state.list.map(item => <CmtItem2 key={item.id} {...item}></CmtItem>)}
         </div>
     }
 }
