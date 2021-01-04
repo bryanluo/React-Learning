@@ -2,21 +2,21 @@
 
 ## 创建基本的 webpack4.x 项目
 
-***1、创建项目包***
+### 1、创建项目包
 > mkdir demo-01
 
-***2、快速初始化应用***
+### 2、快速初始化应用
 > cd demo-01 && npm init -y 
 
-***3、在项目根目录创建 src 和 dist 产品目录，并在 src 目录下创建 index.html***
+### 3、在项目根目录创建 src 和 dist 产品目录，并在 src 目录下创建 index.html
 > mkdir src dist
 
-***4、 使用 cnpm 安装 webpack， 运行  cnpm i webpack webpack-cli -D***
+### 4、 使用 cnpm 安装 webpack， 运行  cnpm i webpack webpack-cli -D
 > npm install -g cnpm --regitry=https://registry.npm.taobao.org
 
 > cnpm i webpack webpack-cli -D
 
-***5、注意： webpack 4.x 提供了约定大于配置的概念； 目的是为了尽量减少配置文件的体积***
+### 5、注意： webpack 4.x 提供了约定大于配置的概念； 目的是为了尽量减少配置文件的体积
 
 > 默认约定了： 打包的入口是 src -> index.js
 
@@ -24,7 +24,7 @@
 
 > 4.x 新增了 mode 选项， 可选值为 development、production
 
-***6、安装 webpack-dev-server 出现问题***
+### 6、安装 webpack-dev-server 出现问题
 
 问题:
 
